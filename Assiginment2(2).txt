@@ -1,0 +1,69 @@
+import java.util.Scanner;
+class  Assing2
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter number of details:");
+		int n=s.nextInt();
+		int []id=new int[n];
+		String []name=new String[n];
+		float []salary=new float[n];
+		String []desg=new String[n];
+		for(int i=0;i<n;i++)
+		{
+		System.out.println("Enter id of employee ");
+		id[i]=s.nextInt();
+		s.nextLine();
+		System.out.println("Enter Name of employee ");
+		name[i]=s.nextLine();
+		
+		System.out.println("Enter Salary of employee ");
+		salary[i]=s.nextFloat();
+		s.nextLine();
+		System.out.println("Enter Desg of employee ");
+		desg[i]=s.nextLine();
+		s.nextLine();
+		}
+		for(int k=0;k<n;k++)
+		{
+			float hra,da,pf;
+			hra=salary[k]*0.1f;
+			da=salary[k]*0.07f;
+            pf=salary[k]*0.05f;
+			if(desg[k].equals("Manager"))
+			{
+				salary[k]=(salary[k]+hra+da-pf)+(salary[k]*0.15f);
+				System.out.println("\n");
+				System.out.println("Details of Employee:"+(k+1));
+				System.out.println("id="+id[k]);
+				System.out.println("Name ="+name[k]);
+				System.out.println("Salary="+salary[k]);
+				System.out.println("Designation="+desg[k]);
+		}
+		else if(desg[k].equals("developer"))
+			{
+			     salary[k]=(salary[k]+hra+da-pf)+(salary[k]*0.1f);
+				System.out.println("\n");
+				System.out.println("Details of Employee:"+(k+1));
+				System.out.println("id="+id[k]);
+				System.out.println("Name ="+name[k]);
+				System.out.println("Salary="+salary[k]);
+				System.out.println("Designation="+desg[k]);
+			}
+			else
+			{
+				salary[k]=(salary[k]+hra+da-pf)+(salary[k]*0.05f);
+				System.out.println("\n");
+				System.out.println("Details of Employee:"+(k+1));
+				System.out.println("id="+id[k]);
+				System.out.println("Name ="+name[k]);
+				System.out.println("Salary="+salary[k]);
+				System.out.println("Designation="+desg[k]);
+
+			}
+		
+			
+		}
+	}
+}
