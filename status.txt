@@ -1,4 +1,13 @@
 I am saimounika 
-i have completed SQL 1,2 Assignments are completed
-i have completed JAVA 1,2,3,4,5 Assignments completed
-pending small mini project Bank app
+complete SQL 
+-->>1(select caluse,join,groupby)Assignments completed
+-->>2(select caluse,join,groupby)Assignments completed
+complete JAVA 
+-->>1(onlineExamation) Assignments completed->but expected output not getting
+-->>2(employee corejava) Assignments completed (prog ) 
+-->>3(employee using class&obj) Assignments completed 
+-->>4(employee using Inheritance) Assignments completed 
+-->>5 (student prog)Assignments completed 
+-->>6 (bank mini project)Assignments ->Errors in program
+-->>7 (string array)Assignments completed 
+
