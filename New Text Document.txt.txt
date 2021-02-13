@@ -1,0 +1,14 @@
+echo "# dummy" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kovisaimounika/FullStackAssignment.git
+git push -u origin main
+
+
+Press “i” (i for insert)
+Write your merge message
+Press “esc” (escape)
+Write “:wq” (write & quit)
+Then press enter
